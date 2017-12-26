@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>JSON及JS对JSON的操作 | BenBenBenBenBen</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="BenBenBenBenBen">
+    <meta name="author" content="种奔奔奔奔">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="https://github.com/chongbenben" title="BenBenBenBenBen" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Canvas技术/" class="animsition-link">Canvas技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/HTML5存储/" class="animsition-link">HTML5存储<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/React-Native/" class="animsition-link">React-Native<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/UI框架/" class="animsition-link">UI框架<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Vue相关实践/" class="animsition-link">Vue相关实践<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/babel技术/" class="animsition-link">babel技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/hexo安装教程/" class="animsition-link">hexo安装教程<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/nginx技术/" class="animsition-link">nginx技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端工程化/" class="animsition-link">前端工程化<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/效果篇/" class="animsition-link">效果篇<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/混合开发/" class="animsition-link">混合开发<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/移动端开发/" class="animsition-link">移动端开发<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">BenBenBenBenBen</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2014-05-09T01:33:36.000Z" itemprop="datePublished">
+          2014-05-09
+      </time>
+    
+</span>
+                <h1>JSON及JS对JSON的操作</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>JSON: <strong>JavaScript Object Notation</strong>(JavaScript 对象表示法)</p>
+<p>JSON 是存储和交换文本信息的语法。类似 XML。</p>
+<p>JSON 比 XML 更小、更快，更易解析。</p>
+<h2 id="一、什么是-JSON-？"><a href="#一、什么是-JSON-？" class="headerlink" title="一、什么是 JSON ？"></a>一、什么是 JSON ？</h2><ul>
+<li>JSON 指的是 JavaScript 对象表示法（JavaScript Object Notation）</li>
+<li>JSON 是轻量级的文本数据交换格式</li>
+<li>JSON 独立于语言 *</li>
+<li>JSON 具有自我描述性，更易理解</li>
+</ul>
+<blockquote>
+<p>*JSON 使用 Javascript语法来描述数据对象，但是 JSON 仍然独立于语言和平台。JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。</p>
+</blockquote>
+<h3 id="1-1综合概述："><a href="#1-1综合概述：" class="headerlink" title="1.1综合概述："></a>1.1综合概述：</h3><p>JSON是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。同时，JSON是 JavaScript 原生格式，这意味着在 JavaScript 中处理 JSON数据不须要任何特殊的 API 或工具包。</p>
+<h2 id="二、在JSON中，有两种结构：对象和数组。"><a href="#二、在JSON中，有两种结构：对象和数组。" class="headerlink" title="二、在JSON中，有两种结构：对象和数组。"></a>二、在JSON中，有两种结构：对象和数组。</h2><ul>
+<li>1.对象</li>
+</ul>
+<p>一个对象以“{”开始，“}”结束。每个“key”后跟一“:”，“‘key/value’ 对”之间运用 “,”分隔。</p>
+<pre><code>packJson = {&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;}
+</code></pre><p>2.数组</p>
+<pre><code>packJson = [
+    {&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;}, 
+    {&quot;name&quot;:&quot;tony&quot;, &quot;password&quot;:&quot;2222&quot;}
+];
+</code></pre><p>数组是值的有序集合。一个数组以“[”开始，“]”结束。值之间运用 “,”分隔。</p>
+<h2 id="三、JSON对象和JSON字符串的转换"><a href="#三、JSON对象和JSON字符串的转换" class="headerlink" title="三、JSON对象和JSON字符串的转换"></a>三、JSON对象和JSON字符串的转换</h2><p>在数据传输流程中，json是以文本，即字符串的形式传递的，而JS操作的是JSON对象，所以，JSON对象和JSON字符串之间的相互转换是关键。例如：</p>
+<p>JSON字符串：</p>
+<pre><code>var jsonStr = &apos;{&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;}&apos;;
+</code></pre><p>JSON对象：</p>
+<pre><code>var jsonObj = {&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;};
+</code></pre><h4 id="3-1-jQuery插件支持的转换方式："><a href="#3-1-jQuery插件支持的转换方式：" class="headerlink" title="3.1  jQuery插件支持的转换方式："></a>3.1  jQuery插件支持的转换方式：</h4><pre><code>$.parseJSON( jsonstr ); //jQuery.parseJSON(jsonstr),可以将json字符串转换成json对象
+</code></pre><h4 id="3-2-浏览器支持的转换方式"><a href="#3-2-浏览器支持的转换方式" class="headerlink" title="3.2 浏览器支持的转换方式:"></a>3.2 浏览器支持的转换方式:</h4><pre><code>JSON.parse(jsonstr); //可以将json字符串转换成json对象 
+JSON.stringify(jsonobj); //可以将json对象转换成json对符串 
+</code></pre><h4 id="3-3-Javascript支持的转换方式："><a href="#3-3-Javascript支持的转换方式：" class="headerlink" title="3.3 Javascript支持的转换方式："></a>3.3 Javascript支持的转换方式：</h4><pre><code>eval(&apos;(&apos; + jsonstr + &apos;)&apos;); //可以将json字符串转换成json对象,注意需要在json字符外包裹一对小括号 
+</code></pre><blockquote>
+<p>注：ie8(兼容模式),ie7和ie6也可以使用eval()将字符串转为JSON对象，但不推荐这些方式，这种方式不安全eval会执行json串中的表达式。 </p>
+</blockquote>
+<p><strong>注意：</strong></p>
+<blockquote>
+<p>上面的几个方法中，除了eval()函数是js自带的之外，其他的几个方法都来自json.js包。新版本的 JSON 修改了 API，将 JSON.stringify() 和 JSON.parse() 两个方法都注入到了 Javascript 的内建对象里面，前者变成了 Object.toJSONString()，而后者变成了 String.parseJSON()。如果提示找不到toJSONString()和parseJSON()方法，则说明您的json包版本太低。</p>
+</blockquote>
+<h2 id="四、遍历JSON对象"><a href="#四、遍历JSON对象" class="headerlink" title="四、遍历JSON对象"></a>四、遍历JSON对象</h2><pre><code>myJson = {&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;};
+
+for(var p in myJson){//遍历json对象的每个key/value对,p为key
+
+   alert(p + &quot; &quot; + myJson[p]);
+
+}
+</code></pre><h4 id="运行结果："><a href="#运行结果：" class="headerlink" title="运行结果："></a>运行结果：</h4><p><img src="json/09102711-9f7ee96ccc6d433dbd0d0a11984edada.jpg" alt=""></p>
+<h2 id="五、遍历JSON数组"><a href="#五、遍历JSON数组" class="headerlink" title="五、遍历JSON数组"></a>五、遍历JSON数组</h2><pre><code>packJson = [
+    {&quot;name&quot;:&quot;nikita&quot;, &quot;password&quot;:&quot;1111&quot;},    
+    {&quot;name&quot;:&quot;tony&quot;, &quot;password&quot;:&quot;2222&quot;}    
+    ];        
+    for(var p in packJson){//遍历json数组时，这么写p为索引，0,1    
+       alert(packJson[p].name + &quot; &quot; + packJson[p].password);
+}
+</code></pre><p>也可以这么遍历：<br>    for(var i = 0; i &lt; packJson.length; i++){</p>
+<pre><code>   alert(packJson[i].name + &quot; &quot; + packJson[i].password);
+
+}
+</code></pre><h4 id="运行结果：-1"><a href="#运行结果：-1" class="headerlink" title="运行结果："></a>运行结果：</h4><p><img src="json/09102758-01fd3c99174a4c14945ee3f6803a7fb4.jpg" alt=""></p>
+<h2 id="六、将两个JSON对象组装到一个里面"><a href="#六、将两个JSON对象组装到一个里面" class="headerlink" title="六、将两个JSON对象组装到一个里面"></a>六、将两个JSON对象组装到一个里面</h2><ul>
+<li>方法：</li>
+</ul>
+<pre><code>var mergeJsonObject = function (jsonbject1, jsonbject2) {
+var resultJsonObject={};
+    for(var attr in jsonbject1){
+        resultJsonObject[attr]=jsonbject1[attr];
+    }
+    for(var attr in jsonbject2){
+        resultJsonObject[attr]=jsonbject2[attr];
+    }
+    return resultJsonObject;
+};
+</code></pre><p>举个栗子：</p>
+<pre><code>var json1 = {&quot;name&quot;:&quot;nikita&quot;};
+var json2 = {&quot;password&quot;:&quot;1111&quot;};
+mergeJsonObject(json1, json2);
+</code></pre><p>本文引用文章地址：</p>
+<p>1.<a href="http://www.cnblogs.com/csj222/archive/2013/04/11/3013667.html" title="http://www.cnblogs.com/csj222/archive/2013/04/11/3013667.html" target="_blank" rel="noopener">http://www.cnblogs.com/csj222/archive/2013/04/11/3013667.html</a><br>2.<a href="http://www.jb51.net/article/35090.htm" title="http://www.jb51.net/article/35090.htm" target="_blank" rel="noopener">http://www.jb51.net/article/35090.htm</a><br>3.<a href="http://blog.csdn.net/wangshu696/article/details/50969281" title="http://blog.csdn.net/wangshu696/article/details/50969281" target="_blank" rel="noopener">http://blog.csdn.net/wangshu696/article/details/50969281</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2014/05/24/jst/" style="float: left;">
+        ← 常见JavaScript小题目
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/02/10/lazyload/">
+        懒加载 lazyload →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/05/09/json/" data-title="JSON及JS对JSON的操作" data-url="http://yoursite.com/2014/05/09/json/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 种奔奔奔奔. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

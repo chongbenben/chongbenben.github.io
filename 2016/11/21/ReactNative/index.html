@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>React-Native从入门到出门左拐 | BenBenBenBenBen</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="BenBenBenBenBen">
+    <meta name="author" content="种奔奔奔奔">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="https://github.com/chongbenben" title="BenBenBenBenBen" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Canvas技术/" class="animsition-link">Canvas技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/HTML5存储/" class="animsition-link">HTML5存储<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/React-Native/" class="animsition-link">React-Native<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/UI框架/" class="animsition-link">UI框架<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Vue相关实践/" class="animsition-link">Vue相关实践<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/babel技术/" class="animsition-link">babel技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/hexo安装教程/" class="animsition-link">hexo安装教程<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/nginx技术/" class="animsition-link">nginx技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端工程化/" class="animsition-link">前端工程化<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/效果篇/" class="animsition-link">效果篇<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/混合开发/" class="animsition-link">混合开发<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/移动端开发/" class="animsition-link">移动端开发<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">BenBenBenBenBen</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-11-21T13:19:19.000Z" itemprop="datePublished">
+          2016-11-21
+      </time>
+    
+    
+    | 
+    <a href='/tags/React-Native/'>React-Native</a>
+    
+    
+</span>
+                <h1>React-Native从入门到出门左拐</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设 Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。这个项目本身也越滚越大，从最早的UI引擎变成了一整套前后端通吃的 Web App 解决方案。衍生的 React Native 项目，目标更是宏伟，希望用写 Web App 的方式去写 Native App。</p>
+<a id="more"></a>
+<h1 id="Windows配置"><a href="#Windows配置" class="headerlink" title="Windows配置"></a>Windows配置</h1><h2 id="安装GenymotionShell"><a href="#安装GenymotionShell" class="headerlink" title="安装GenymotionShell"></a>安装GenymotionShell</h2><h2 id="安装react-native-cli"><a href="#安装react-native-cli" class="headerlink" title="安装react-native-cli"></a>安装react-native-cli</h2><p>cpnm i react-native-cli -g</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>react-native init 目录名</p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>Path 添加Android\sdk\platform-tools和tools<br>执行adb 有东西弹出(需要安装安卓sdk)表示正常</p>
+<h2 id="打开SDKManager"><a href="#打开SDKManager" class="headerlink" title="打开SDKManager"></a>打开SDKManager</h2><p>安装 Android SDK build-tools .01勾上安装</p>
+<h2 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h2><p>进入刚才创建的目录</p>
+<p>react-native run-android    </p>
+<h1 id="Mac配置"><a href="#Mac配置" class="headerlink" title="Mac配置"></a>Mac配置</h1><h2 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h2><p>brew update 更新<br>brew doctor 检测问题<br>xcode-select –install 装select一些依赖<br>brew install watchman<br>brew install flow</p>
+<h2 id="安装并配置andriod虚拟机"><a href="#安装并配置andriod虚拟机" class="headerlink" title="安装并配置andriod虚拟机"></a>安装并配置andriod虚拟机</h2><p>安装JDK 在甲骨文官网下载<br>brew install androud-sdk 安装SDK<br>配置环境变量<br>cd~  vi~/.bash_profile<br>jdk也要配置<br>export ANDROID_HOME=/usr/local/opt/android-sdk<br>找到sdkmanage 安装依赖包<br>extras 需要装android support Repository<br>iunter *86 Emulator acceleator 手工安装 鼠标放上去会显示路径</p>
+<h2 id="安装react-native-cli-1"><a href="#安装react-native-cli-1" class="headerlink" title="安装react-native-cli"></a>安装react-native-cli</h2><p>cpnm i react-native-cli -g</p>
+<h2 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h2><p>react-native init 目录名</p>
+<p>打开文件夹 直接run<br>command +D 出现控制菜单<br>command +R 刷新</p>
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>index.andriod.js<br>index.ios.js</p>
+<h2 id="规范"><a href="#规范" class="headerlink" title="规范"></a>规范</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">内样式的写法  style=&#123;&#123;&#125;&#125; 里面写样式用小驼峰</span><br><span class="line">单位不写px</span><br><span class="line">样式组件</span><br><span class="line"><span class="keyword">let</span> styles=StyleSheet.creatClass(&#123;</span><br><span class="line">	container:&#123;</span><br><span class="line">		<span class="comment">//里面写样式小驼峰</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line">外面引入style=&#123;styles.container&#125;</span><br><span class="line"></span><br><span class="line">  &lt;View&gt; 用来布局  &lt;Text&gt; 显示文本  &lt;Image&gt; 显示图片 样式可以继承</span><br><span class="line">写多个样式  style=&#123;[styles.a,styles.b]&#125; </span><br><span class="line">flex布局默认是column</span><br></pre></td></tr></table></figure>
+<h1 id="组件-Component"><a href="#组件-Component" class="headerlink" title="组件(Component)"></a>组件(Component)</h1><p>官方组件必须用对象解构的方式在react-native引入时引入</p>
+<h2 id="helloworld"><a href="#helloworld" class="headerlink" title="helloworld"></a>helloworld</h2><p>首先从index.android.js开始</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>; <span class="comment">//用数组解构的方式引入 Component 来定义组件</span></span><br><span class="line"><span class="keyword">import</span> &#123; AppRegistry, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>; <span class="comment">//引入react-native自带组件AppRegistry(用来注册根组件) Text用来显示文本 View用来布局</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">hello</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  render()&#123;</span><br><span class="line">    <span class="keyword">return</span>(</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;hello&lt;<span class="regexp">/Text&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>View&gt;</span><br><span class="line">      )</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">AppRegistry.registerComponent(<span class="string">'react_1'</span>, () =&gt; hello); <span class="comment">//第一个参数为项目名 第二个参数为注册的根组件</span></span><br></pre></td></tr></table></figure>
+<h2 id="声明组件"><a href="#声明组件" class="headerlink" title="声明组件"></a>声明组件</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">hello</span> <span class="keyword">extends</span> <span class="title">Component</span>等价于 <span class="title">var</span> <span class="title">hello</span> </span>= React.createClass(&#123;&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="StyleSheet组件-样式"><a href="#StyleSheet组件-样式" class="headerlink" title="StyleSheet组件(样式)"></a>StyleSheet组件(样式)</h2><p>StyleSheet.create 的创建是可选的，但提供了一些关键优势。它通过将它们转换为引用一个内部表的纯数字，来确保值是不可变的和不透明的。通过将它放在文件的最后，也确保了它们为应用程序只创建一次，而不是每一个 render 都创建。<br>所有的属性名称和值是工作在网络中的一个子集。对于布局来说，React Native实现了 Flexbox。<br>如果不使用图片组件可以直接在行内写样式<br>例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;Text style=&#123;&#123;fontSize:40&#125;&#125;&gt;&lt;/Text&gt; //单个样式写法</span><br><span class="line">&lt;View style=&#123;[styles.base, styles.background]&#125; /&gt;//多个样式写法</span><br></pre></td></tr></table></figure></p>
+<p>在冲突值的情况下，从最右边元素的值将会优先，并且 falsy 值如 false，undefined 和 null 将被忽略。一个常见的模式是基于某些条件有条件地添加一个样式。</p>
+<p>如果使用StyleSheet组件<br>在React-native中引入StyleSheet后<br>首先先声明一个变量用来存储样式的内容<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> styles=Stylesheet.create(&#123;</span><br><span class="line">	样式名:&#123;</span><br><span class="line">		key:value</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h2 id="图片组件Image"><a href="#图片组件Image" class="headerlink" title="图片组件Image"></a>图片组件Image</h2><p>图片必须给宽高不然不显示<br>如果是本地图片需要先require进来后使用</p>
+<h3 id="resizeMode属性"><a href="#resizeMode属性" class="headerlink" title="resizeMode属性"></a>resizeMode属性</h3><p>当帧与原始图像尺寸不匹配时用于确定如何调整图像的大小<br>三个值 (‘cover’, ‘contain’, ‘stretch’)</p>
+<h3 id="source属性"><a href="#source属性" class="headerlink" title="source属性"></a>source属性</h3><p>可以是base64图片<br>使用方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">soure=&#123;&#123;<span class="attr">uri</span>:<span class="string">''</span>&#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="ScrollView-适合数量较少的滚动"><a href="#ScrollView-适合数量较少的滚动" class="headerlink" title="ScrollView 适合数量较少的滚动"></a>ScrollView 适合数量较少的滚动</h2><p>ScrollView适合用来显示数量不多的滚动元素。放置在ScollView中的所有组件都会被渲染<br>ScrollView是一个通用的可滚动的容器，你可以在其中放入多个组件和视图，而且这些组件并不需要是同类型的。ScrollView不仅可以垂直滚动，还能水平滚动（通过horizontal属性来设置</p>
+<h2 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ContentText</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123; <span class="comment">//定义ContentText组件</span></span><br><span class="line">	render()&#123;</span><br><span class="line">	<span class="keyword">return</span>(</span><br><span class="line">		<span class="comment">//组件内容	</span></span><br><span class="line">	)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="listView-自带懒加载-scroll"><a href="#listView-自带懒加载-scroll" class="headerlink" title="listView 自带懒加载 scroll"></a>listView 自带懒加载 scroll</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> React.createClass(&#123;</span><br><span class="line">	getInitialState()&#123;</span><br><span class="line">	<span class="keyword">let</span> movies=[</span><br><span class="line">	&#123;<span class="attr">title</span>:<span class="string">'123'</span>&#125;</span><br><span class="line">	]</span><br><span class="line">	<span class="keyword">let</span> dataSource = <span class="keyword">new</span> ListView.DataSource(&#123; <span class="comment">//这个D要大写</span></span><br><span class="line">		rowHasChanged:<span class="function">(<span class="params">row1,row2</span>)=&gt;</span> row1!==row2</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>&#123;</span><br><span class="line">		movies:dataSource.cloneWithRows(movies) <span class="comment">//按照集合的每个内容进行遍历</span></span><br><span class="line">		&#125;      <span class="comment">//直接return state的内容</span></span><br><span class="line">	,</span><br><span class="line">	render()&#123;</span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		&lt;View&gt;</span><br><span class="line">			&lt;ListView</span><br><span class="line">			dataSource=&#123;<span class="keyword">this</span>.state.movies&#125; <span class="comment">//用来获取ListView的数据</span></span><br><span class="line">			renderRow=&#123;</span><br><span class="line">				movie =&gt; &lt;Text styles=&#123;styles.itemText&#125;&gt;&#123;movie.title&#125;&lt;/Text&gt;</span><br><span class="line">			&#125;<span class="comment">//具体内容</span></span><br><span class="line">			/&gt;</span><br><span class="line">				</span><br><span class="line">			</span><br><span class="line">		&lt;<span class="regexp">/View&gt;</span></span><br><span class="line"><span class="regexp">	)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&#125;)</span></span><br></pre></td></tr></table></figure>
+<h1 id="数据拉取"><a href="#数据拉取" class="headerlink" title="数据拉取"></a>数据拉取</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> REQUEST_URL=<span class="string">''</span> <span class="comment">//url</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> React.createClass(&#123;</span><br><span class="line">	getInitialState()&#123;</span><br><span class="line">		<span class="keyword">this</span>.fetchData)();</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">		movies:</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">fetchData()&#123;</span><br><span class="line">	fetch(REQUEST_URL)</span><br><span class="line">	.then(<span class="function"><span class="params">res</span>=&gt;</span>res.json())</span><br><span class="line">	.then(<span class="function"><span class="params">resData</span>=&gt;</span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.state.movies.cloneWithRows(resData.subjects) <span class="comment">//subjects为要取数据的key</span></span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/12/26/kuayu/" style="float: left;">
+        ← 浏览器同源与跨域问题总结
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/11/12/mvvmtheory/">
+        mvvm双向绑定机制的原理 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/11/21/ReactNative/" data-title="React-Native从入门到出门左拐" data-url="http://yoursite.com/2016/11/21/ReactNative/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 种奔奔奔奔. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

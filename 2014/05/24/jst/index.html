@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>常见JavaScript小题目 | BenBenBenBenBen</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="BenBenBenBenBen">
+    <meta name="author" content="种奔奔奔奔">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="https://github.com/chongbenben" title="BenBenBenBenBen" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Canvas技术/" class="animsition-link">Canvas技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/HTML5存储/" class="animsition-link">HTML5存储<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/React-Native/" class="animsition-link">React-Native<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/UI框架/" class="animsition-link">UI框架<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Vue相关实践/" class="animsition-link">Vue相关实践<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/babel技术/" class="animsition-link">babel技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/hexo安装教程/" class="animsition-link">hexo安装教程<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/nginx技术/" class="animsition-link">nginx技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端工程化/" class="animsition-link">前端工程化<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/效果篇/" class="animsition-link">效果篇<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/混合开发/" class="animsition-link">混合开发<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/移动端开发/" class="animsition-link">移动端开发<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">BenBenBenBenBen</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2014-05-24T11:41:02.000Z" itemprop="datePublished">
+          2014-05-24
+      </time>
+    
+</span>
+                <h1>常见JavaScript小题目</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="1-请给Array本地对象增加一个原型方法，它的用途是删除数组条目中重复的条目-可能有多个-，返回值是一个包含被删除的重复条目的新数组。"><a href="#1-请给Array本地对象增加一个原型方法，它的用途是删除数组条目中重复的条目-可能有多个-，返回值是一个包含被删除的重复条目的新数组。" class="headerlink" title="1.请给Array本地对象增加一个原型方法，它的用途是删除数组条目中重复的条目(可能有多个)，返回值是一个包含被删除的重复条目的新数组。"></a>1.请给Array本地对象增加一个原型方法，它的用途是删除数组条目中重复的条目(可能有多个)，返回值是一个包含被删除的重复条目的新数组。</h2><pre><code>Array.prototype.distinct=function(){
+var ret=[];
+for(var i=0;i&lt;this.length;i++){
+    for(var j=i+1;j&lt;this.length;){
+        if(this[i]===this[j]){
+            ret.push(this.splice(j,1)[0]);
+        }else{
+            j++;
+        }
+    }
+}
+return ret;
+}
+//for test
+alert([&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;,&apos;b&apos;,&apos;a&apos;,&apos;e&apos;].distinct());
+</code></pre><h2 id="2-希望获取到页面中所有的checkbox怎么做？-不使用第三方框架"><a href="#2-希望获取到页面中所有的checkbox怎么做？-不使用第三方框架" class="headerlink" title="2.希望获取到页面中所有的checkbox怎么做？(不使用第三方框架)"></a>2.希望获取到页面中所有的checkbox怎么做？(不使用第三方框架)</h2><pre><code>var arr = new Array();
+var boxs = document.getElementsByTagName(&quot;input&quot;);
+for(var index in boxs) {
+    if(boxs[index].type == &quot;checkbox&quot;){
+        arr.push(boxs[index]);
+    }
+}
+return arr;
+</code></pre><h2 id="3-当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？"><a href="#3-当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？" class="headerlink" title="3.当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？"></a>3.当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？</h2><pre><code>box.onclick = function(){}
+box.addEventListener(&quot;click&quot;,function(){},false);
+function xxx(){}
+&lt;button onclick=&quot;xxx()&quot;&gt;&lt;/button&gt;
+</code></pre><h2 id="4-看下列代码-输出什么？解释原因"><a href="#4-看下列代码-输出什么？解释原因" class="headerlink" title="4.看下列代码,输出什么？解释原因"></a>4.看下列代码,输出什么？解释原因</h2><pre><code>1 var a = null;
+2 alert(typeof a); //object
+</code></pre><blockquote>
+<p>所有对象的默认值都是null</p>
+</blockquote>
+<h2 id="5-看下列代码-输出什么？解释原因。"><a href="#5-看下列代码-输出什么？解释原因。" class="headerlink" title="5.看下列代码,输出什么？解释原因。"></a>5.看下列代码,输出什么？解释原因。</h2><pre><code>var foo = &quot;11&quot;+2-&quot;1&quot;;
+console.log(foo);
+console.log(typeof foo);
+</code></pre><h4 id="javascript中加法操作符与减法操作符在字符串与数字相加时的区别"><a href="#javascript中加法操作符与减法操作符在字符串与数字相加时的区别" class="headerlink" title="javascript中加法操作符与减法操作符在字符串与数字相加时的区别"></a>javascript中加法操作符与减法操作符在字符串与数字相加时的区别</h4><ul>
+<li>对于加法操作符（+）的用法</li>
+</ul>
+<p>如果操作数中含有字符串，那么就要应用如下规则：</p>
+<p>1）如果两个操作数都是字符串，则将第二个操作数与第一个操作数拼接起来；</p>
+<p>2）如果只有一个操作数是字符串，则将另一个操作数转换为字符串，然后再将两个字符串拼接起来。<br>如果有一操作数为对象，数字或者布尔值，则调用它们的toString()方法取得相应的字符串的值，然后再应用前面关于字符串的规则。对于Undefined和null，则分别调用String()方法并取得字符串”undefined”和“null”。</p>
+<ul>
+<li>对于减法操作符（-）</li>
+</ul>
+<p>如果操作符中含有字符串，那么就要应用如下规则：</p>
+<p>如果有一个操作符是字符串，布尔值，null或者undefined,则先在后台调用Number（）函数将其转换为数值，然后再执行数和数字之间的减法运算。如果转换的结果为NaN，那么得到的结果就是NaN。</p>
+<p>tips：Number（）函数的转换规则中：如果是null值，则返回0；如果是undefined,则返回NaN.</p>
+<pre><code>var foo = &quot;11&quot;+2;  
+console.log(foo);//112  
+console.log(typeof foo);//string  
+
+var foo = &quot;11&quot;+2-&quot;1&quot;;  
+console.log(foo);//111  
+console.log(typeof foo);//number 
+</code></pre><p>所以，在上述例子中。“11”+2，执行的是将数字2转换成字符串再与“11”拼接，最后的结果为“112”，string类型；“112”-“1”，分别将“112”和“1”转换成数字，相减，结果为111，number类型。</p>
+<h2 id="6-看下列代码-输出什么？解释原因。"><a href="#6-看下列代码-输出什么？解释原因。" class="headerlink" title="6.看下列代码,输出什么？解释原因。"></a>6.看下列代码,输出什么？解释原因。</h2><pre><code>var foo = 1;
+(function(){
+    console.log(foo);
+    foo = 2;
+    console.log(foo);
+})();
+</code></pre><h6 id="看下面示例："><a href="#看下面示例：" class="headerlink" title="看下面示例："></a>看下面示例：</h6><pre><code>var foo=1;
+function bar() {
+    //javascript没有块级作用域, 在一个函数内任何地方声明的var都会被提到函数的最开头
+    //相当于这里有一个 var foo;
+    console.log(foo); //undefined, 因为函数内的var foo把外头的给覆盖了
+    if (!foo) {
+        var foo = 10; //相当于foo = 10; var foo的声明被提到最前
+    }
+    console.log(foo);
+} 
+bar();
+</code></pre><h2 id="7-写一个function，清除字符串前后的空格。（兼容所有浏览器）"><a href="#7-写一个function，清除字符串前后的空格。（兼容所有浏览器）" class="headerlink" title="7.写一个function，清除字符串前后的空格。（兼容所有浏览器）"></a>7.写一个function，清除字符串前后的空格。（兼容所有浏览器）</h2><pre><code>String.prototype.trim = function(){
+    return this.replace(/^\s+/,&quot;&quot;).replace(/\s+$/,&quot;&quot;);
+}
+</code></pre><h2 id="8-请问p-name是多少？"><a href="#8-请问p-name是多少？" class="headerlink" title="8.请问p.name是多少？"></a>8.请问p.name是多少？</h2><p>1 ：   </p>
+<pre><code>var fun = function(){
+    this.name = &apos;peter&apos;;
+        return {
+            name: &apos;jack&apos;
+        };
+    }
+var p = new fun();
+</code></pre><p>2：</p>
+<pre><code>var fun = function(){
+    this.name = &apos;peter&apos;;
+        return &apos;jack&apos;;
+    }
+var p = new fun();
+</code></pre><blockquote>
+<p>1.jack<br>  2.undefined</p>
+</blockquote>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2014/05/28/callapply/" style="float: left;">
+        ← js中call与apply的用法
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/05/09/json/">
+        JSON及JS对JSON的操作 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/05/24/jst/" data-title="常见JavaScript小题目" data-url="http://yoursite.com/2014/05/24/jst/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 种奔奔奔奔. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

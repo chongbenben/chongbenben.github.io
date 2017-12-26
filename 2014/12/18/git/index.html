@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Git与SVN的区别 | BenBenBenBenBen</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="BenBenBenBenBen">
+    <meta name="author" content="种奔奔奔奔">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="https://github.com/chongbenben" title="BenBenBenBenBen" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                        <li><a href="https://github.com/chongbenben" target="_BLANK" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Canvas技术/" class="animsition-link">Canvas技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/HTML5存储/" class="animsition-link">HTML5存储<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/React-Native/" class="animsition-link">React-Native<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/UI框架/" class="animsition-link">UI框架<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Vue相关实践/" class="animsition-link">Vue相关实践<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/babel技术/" class="animsition-link">babel技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/hexo安装教程/" class="animsition-link">hexo安装教程<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/nginx技术/" class="animsition-link">nginx技术<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/前端工程化/" class="animsition-link">前端工程化<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/效果篇/" class="animsition-link">效果篇<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/混合开发/" class="animsition-link">混合开发<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/移动端开发/" class="animsition-link">移动端开发<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                    <li><a href="https://github.com/chongbenben" class="animsition-link">奔奔</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">BenBenBenBenBen</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2014-12-18T13:19:27.000Z" itemprop="datePublished">
+          2014-12-18
+      </time>
+    
+</span>
+                <h1>Git与SVN的区别</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="1、Git是分布式版本控制系统，SVN是集中式版本控制系统："><a href="#1、Git是分布式版本控制系统，SVN是集中式版本控制系统：" class="headerlink" title="1、Git是分布式版本控制系统，SVN是集中式版本控制系统："></a>1、Git是分布式版本控制系统，SVN是集中式版本控制系统：</h3><p>这是最核心的区别。好处是跟其他同事不会有太多的冲突，自己写的代码放在自己电脑上，一段时间后再提交、合并，也可以不用联网在本地提交；Git并不是目前第一个或唯一的分布式版本控制系统。还有一些系统，例如Bitkeeper, Mercurial等，也是运行在分布式模式上的。但Git在这方面做的更好，而且有更多强大的功能特征。</p>
+<p>Git跟SVN一样有自己的 集中式版本库或服务器。但，Git更倾向于被使用于分布式模式，也就是每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。可以这样说，如果你被困在一个不能连接网络的地方时，你仍然能够提交文件，查看历史版本记录，创建项 目分支等。</p>
+<p>Git需要建两个Repositories(Local Repositories &amp; Remote Repositories),指令很多，除此之外你需要知道哪些指令在Local Repository，哪些指令在Remote Repository。</p>
+<h3 id="2、Git把内容按元数据方式存储，而SVN是按文件："><a href="#2、Git把内容按元数据方式存储，而SVN是按文件：" class="headerlink" title="2、Git把内容按元数据方式存储，而SVN是按文件："></a>2、Git把内容按元数据方式存储，而SVN是按文件：</h3><p>如果你把.git目录的体积大小跟.svn比较，你会发现它们差距很大。因 为,.git目录是处于你的机器上的一个克隆版的版本库，它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。</p>
+<h3 id="3、Git没有一个全局版本号，而SVN有："><a href="#3、Git没有一个全局版本号，而SVN有：" class="headerlink" title="3、Git没有一个全局版本号，而SVN有："></a>3、Git没有一个全局版本号，而SVN有：</h3><p>目前为止这是跟SVN相比GIT缺少的最大的一个特征。</p>
+<h3 id="4、Git的内容的完整性要优于SVN"><a href="#4、Git的内容的完整性要优于SVN" class="headerlink" title="4、Git的内容的完整性要优于SVN:"></a>4、Git的内容的完整性要优于SVN:</h3><p> GIT的内容存储使用的是SHA-1哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</p>
+<h3 id="5、Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网"><a href="#5、Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网" class="headerlink" title="5、Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网"></a>5、Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网</h3><h3 id="6、版本库（repository"><a href="#6、版本库（repository" class="headerlink" title="6、版本库（repository):"></a>6、版本库（repository):</h3><p>SVN只能有一个指定中央版本库。当这个中央版本库有问题时，所有工作成员都一起瘫痪直到版本库维修完毕或者新的版本库设立完成。而 Git可以有无限个版本库。或者，更正确的说法，每一个Git都是一个版本库，区别是它们是否拥有活跃目录（Git Working Tree）。如果主要版本库（例如：置於GitHub的版本库）发生了什麼事，工作成员仍然可以在自己的本地版本库（local repository）提交，等待主要版本库恢复即可。工作成员也可以提交到其他的版本库！</p>
+<h3 id="7、分支（Branch）"><a href="#7、分支（Branch）" class="headerlink" title="7、分支（Branch）"></a>7、分支（Branch）</h3><p>在SVN，分支是一个完整的目录。且这个目录拥有完整的实际文件。如果工作成员想要开啟新的分支，那将会影响“全世界”！每个人都会拥有和你一样的分支。如果你的分支是用来进行破坏工作（安检测试），那将会像传染病一样,你改一个分支，还得让其他人重新切分支重新下载，十分狗血。而 Git，每个工作成员可以任意在自己的本地版本库开啟无限个分支。举例：当我想尝试破坏自己的程序（安检测试），并且想保留这些被修改的文件供日后使用， 我可以开一个分支，做我喜欢的事。完全不需担心妨碍其他工作成员。只要我不合并及提交到主要版本库，没有一个工作成员会被影响。等到我不需要这个分支时， 我只要把它从我的本地版本库删除即可。无痛无痒。</p>
+<h3 id="8、提交（Commit）"><a href="#8、提交（Commit）" class="headerlink" title="8、提交（Commit）"></a>8、提交（Commit）</h3><p>在SVN，当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！而Git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。</p>
+<h4 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h4><ol>
+<li><a href="http://blog.csdn.net/bruce_6/article/details/38299677" target="_blank" rel="noopener">http://blog.csdn.net/bruce_6/article/details/38299677</a></li>
+<li><a href="http://www.cnblogs.com/qinfengxiaoyue/p/3450194.html" target="_blank" rel="noopener">http://www.cnblogs.com/qinfengxiaoyue/p/3450194.html</a></li>
+</ol>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2014/12/23/BFC/" style="float: left;">
+        ← 到底什么是BFC
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/12/09/canvas/">
+        canvas入门详解 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/12/18/git/" data-title="Git与SVN的区别" data-url="http://yoursite.com/2014/12/18/git/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 种奔奔奔奔. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chongbenben" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://github.com/chongbenben" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/u/2543688233/home?wvr=5" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
